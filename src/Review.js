@@ -29,20 +29,20 @@ const Review = () => {
         });
     }
     return(
-        <article className="review">
-            <div className="img-container">
-                <img src={ image } alt={ image } className="person-img"/>
+        <article className='review'>
+            <div className='img-container'>
+                <img src={ image } alt={ image } className='person-img'/>
             </div>
             <h4 className='author'>{ name }</h4>
-            <p className="job">{ job }</p>
-            <p className="info">{ text }</p>
-            <div className="button-container">
-                <button className="prev-btn" onClick={ PrevReview }>prev</button>
-                <button className="next-btn" onClick={ NextReview }>
+            <p className='job'>{ job }</p>
+            <p className='info'>{ text }</p>
+            <div className='button-container'>
+                <button className='prev-btn' onClick={ PrevReview }>prev</button>
+                <button className='next-btn' onClick={ NextReview }>
                     next
                 </button>
             </div>
-            <button className="random-btn">random review</button>
+            <button className='random-btn'>random review</button>
         </article>
     );
 }

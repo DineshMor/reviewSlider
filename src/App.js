@@ -5,7 +5,7 @@ import Review from './Review';
 
 const App = () => {
     return(
-        <div className="wrap">
+        <div className='wrap'>
             <Header />
             <Review />
         </div>
