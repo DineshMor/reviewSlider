@@ -9,18 +9,18 @@ const Review = () => {
     const checkNum = (indexNum) => {
         if(indexNum > Person.length-1){
             console.log('fif');
-             return indexNum = 0
-         } if (indexNum < 0) {
+            return indexNum = 0
+        }if (indexNum < 0) {
             return Person.length - 1;
-          }
-          return indexNum;
-     }
+        }
+        return indexNum;
+    }
     const NextReview = () => {
         setIndex(index => {
             let newIndex = index + 1;
             console.log(newIndex, 'in set index');
             return checkNum(newIndex);
-          });
+        });
     }
     const PrevReview = () => {
         setIndex(index => {
@@ -33,13 +33,11 @@ const Review = () => {
             <div className="img-container">
                 <img src={ image } alt={ image } className="person-img"/>
             </div>
-            <h4 className="author">{ name }</h4>
+            <h4 className='author'>{ name }</h4>
             <p className="job">{ job }</p>
             <p className="info">{ text }</p>
             <div className="button-container">
-                <button className="prev-btn" onClick={ PrevReview }>
-                   prev
-                </button>
+                <button className="prev-btn" onClick={ PrevReview }>prev</button>
                 <button className="next-btn" onClick={ NextReview }>
                     next
                 </button>
